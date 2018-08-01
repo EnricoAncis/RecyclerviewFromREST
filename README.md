@@ -1,4 +1,4 @@
-# RecyclerviewFromREST
+# Recyclerview from REST
 Demo Android project that populates a recicleview from a REST call.
 The call returns a JSON of post list from http://www.mocky.io/v2/59f2e79c2f0000ae29542931.
 
