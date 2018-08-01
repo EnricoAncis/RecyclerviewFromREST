@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Rest-Filter</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Used in overflow menu to refresh posts-->
+    <string name="action_refresh">Refresh</string>
+
+    <string name="error_message">
+        An error has occurred. Please try again by clicking REFRESH
+    </string>
+
+    <!-- Post elements -->
+    <string name="post_user_id_label">
+       User ID:
+    </string>
+    <string name="post_user_id_hint">
+       ID
+    </string>
+    <string name="post_date_hint">
+       date
+    </string>
+    <string name="post_title_hint">
+       Title
+    </string>
+    <string name="post_description_hint">
+       Description
+    </string>
+</resources>

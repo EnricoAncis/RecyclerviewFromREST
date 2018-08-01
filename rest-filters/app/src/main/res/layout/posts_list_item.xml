@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/background_light"
+    android:orientation="vertical">
+
+    <!--This LinearLayout holds all data for one particular post-->
+    <LinearLayout
+        android:id="@+id/ll_post_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/post_height"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/image_frame_width"
+            android:layout_height="@dimen/post_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/half_margin">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_delete" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_container_data"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_id_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/xsmall_margin"
+                android:text="@string/post_user_id_label"
+                android:textSize="@dimen/font_size_user" />
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_user_id_lable"
+                android:hint="@string/post_user_id_hint"
+                android:textSize="@dimen/font_size_user" />
+
+            <TextView
+                android:id="@+id/tv_published_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:hint="@string/post_date_hint"
+                android:textSize="@dimen/font_size_date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_user_id"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_gravity="top"
+                android:layout_marginBottom="4dp"
+                android:hint="@string/post_title_hint"
+                android:textSize="@dimen/font_size_title"
+                android:textStyle="bold"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tv_title"
+                android:layout_gravity="top|bottom"
+                android:hint="@string/post_description_hint"
+                android:textSize="@dimen/font_size_desc" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--This View serves as a visual divider between list items-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_size"
+        android:layout_marginLeft="@dimen/half_margin"
+        android:layout_marginRight="@dimen/half_margin"
+        android:background="#dadada" />
+
+</LinearLayout>
